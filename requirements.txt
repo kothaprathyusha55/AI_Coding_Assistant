@@ -1,0 +1,40 @@
+# INSTALL NODE ENVIRONMENT
+Download and install Node.js (v18 or above) from:
+https://nodejs.org
+
+# CHECK INSTALLATION
+node -v
+npm -v
+
+# INSTALL PROJECT DEPENDENCIES
+npm install
+
+# REQUIRED NODE PACKAGES
+npm install axios
+
+# REQUIRED DEV PACKAGES
+npm install -D typescript
+npm install -D @types/node
+npm install -D @types/vscode
+npm install -D eslint
+npm install -D @typescript-eslint/parser
+npm install -D @typescript-eslint/eslint-plugin
+
+# COMPILE TYPESCRIPT
+npm run compile
+
+# RUN THE EXTENSION
+Press F5 in VS Code to launch Extension Development Host
+Run command: "AI Code Helper"
+
+# REQUIREMENT: LOCAL LLM SERVER
+You must run Ollama (or your model) locally:
+Download: https://ollama.ai
+
+# START MODEL
+ollama run llama3
+# OR your finetuned model
+ollama run finetuned-LLaMa3.2
+
+# API ENDPOINT MUST BE ACTIVE
+http://localhost:11434/api/generate
